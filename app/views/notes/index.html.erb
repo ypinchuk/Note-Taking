@@ -1,5 +1,6 @@
 <h1>Listing Notes</h1>
 <%= link_to 'New Note', new_note_path %>
+
  
 <table>
   <tr>
@@ -12,6 +13,7 @@
       <td><%= note.title %></td>
       <td><%= note.text %></td>
       <td><%= link_to 'Show', note_path(note) %></td>
+      <td><%= link_to 'Edit', edit_note_path(note) %></td>
     </tr>
   <% end %>
 </table>
